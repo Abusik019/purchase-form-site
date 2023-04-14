@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <form class="container">
+            <div class="container-delivery">
+                <p class="form-title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</p>
+                <input type="radio" name="delivery" id="delivery1" value="Шоурум" style="transform:scale(1.5);">
+                <label for="delivery1">Шоурум</label>
+                <input type="radio" name="delivery" id="delivery2" value="Курьером по Москве" style="transform:scale(1.5);">
+                <label for="delivery2">Курьером по Москве</label>
+                <input type="radio" name="delivery" id="delivery3" value="Курьером по России" style="transform:scale(1.5);">
+                <label for="delivery3">Курьером по России</label>
+                <br>
+                <input type="radio" class="delivery-zagranicu" name="delivery" id="delivery4" value="Курьером за границу" style="transform:scale(1.5);">
+                <label for="delivery4">Курьером за границу</label>
+            </div>
+            <div class="container-bio">
+                <p class="bio-title">ОСНОВНАЯ ИНФОРМАЦИЯ</p>
+                <input type="text" class="bio-fio" placeholder="ВВЕДИТЕ ФИО" required>
+                <input type="tel" class="bio-tel" placeholder="ВВЕДИТЕ ТЕЛЕФОН" required>
+                <input type="email" class="bio-email" placeholder="ВВЕДИТЕ E-MAIL" required>
+                <textarea class="bio-comment" name="comment" id="comment" cols="30" rows="10" placeholder="ДОБАВИТЬ КОММЕНТАРИЙ"></textarea>
+                <div class="bio-check">
+                    <input type="checkbox" class="bio-checkbox" name="check" required>
+                    <label for="check" class="bio-checkbox_text">Я принимаю договор публичной оферты</label>
+                </div>
+            </div>
+            <div class="container-payment">
+                <p class="payment-title">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</p>
+                <input type="radio" name="payment" id="payment1" value="Оплата картой" style="transform:scale(1.5);">
+                <label for="payment1">Оплата картой</label>
+                <input type="radio" name="payment"  id="payment2" value="Наличными курьеру" style="transform:scale(1.5);">
+                <label for="payment2">Наличными курьеру</label>
+                <input type="radio" name="payment" id="payment3" value="Наложенный платеж" style="transform:scale(1.5);">
+                <label for="payment3">Наложенный платеж</label>
+                <br>
+                <input type="radio" class="payment-1" name="payment" id="payment4" value="Купить в рассрочку" style="transform:scale(1.5);">
+                <label for="payment4">Купить в рассрочку</label>
+                <div class="container-line"></div>
+                <div class="container-block">
+                    <h1 class="container-block_text">ИТОГО:</h1>
+                    <h2 class="container-block_text2">145 200 ₽</h2>
+                </div>
+                <button type="submit" class="container-button">ОФОРМИТЬ ЗАКАЗ</button>
+            </div>    
+        </form>
+        <div class="aside_content">
+            <div class="aside_image"></div>
+            <p class="aside_text">
+                Все заказы, размещенные на сайте ELEAN бережно и с любовью <br>
+                упакованы в картонную коробку и перевязанны лентой с логотипом <br>
+                бренда.<br>
+                <br>
+                Костюмы доставляются в тканевом чехле для комфортного хранения и <br>
+                перевозки. В каждый заказ вкладывается карточка с рекомендациями <br>
+                по уходу за изделиями.
+            </p>
+        </div>
+
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
